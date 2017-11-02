@@ -1,0 +1,1536 @@
+debug 1
+SERVER Creation
+SERVER Creation
+debug 2
+Debug MyappHelper 1
+Debug MyappHelper 2
+debug 3
+CLIENT Creation
+CLIENT Creation
+CLIENT Creation
+CLIENT Creation
+CLIENT Creation
+CLIENT Creation
+CLIENT Creation
+CLIENT Creation
+CLIENT Creation
+CLIENT Creation
+debug 4
+CLIENT Setup
+CLIENT Setup
+CLIENT Setup
+CLIENT Setup
+CLIENT Setup
+CLIENT Setup
+CLIENT Setup
+CLIENT Setup
+CLIENT Setup
+CLIENT Setup
+SERVER StartApplication
+SERVER StartApplication
+CLIENT StartApplication
+CLIENT Calling Bind
+CLIENT Called Bind
+CLIENT SendPacket
+CLIENT Sending MSG 'Foobar
+
+' to SERVER
+At time 1s CLIENT sent 9 bytes
+SERVER HandleAccept
+SERVER HandleRead
+SERVER Received Packet. Payload = 'Foobar
+
+'
+Server outgoing = '202 Command Not Implemented
+
+'
+Server sending '202 Command Not Implemented
+
+'
+SERVER SendPacket 202 Command Not Implemented
+
+
+At time 1.10215s SERVER received 9 bytes from 10.1.1.3 port 49153 total Rx 9 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '202 Command Not Implemented
+
+'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET UNKNOWNFILE
+
+' to SERVER
+At time 1.13052s CLIENT sent 18 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET UNKNOWNFILE
+
+'
+Server outgoing = '550 File Unavailable
+
+'
+Server sending '550 File Unavailable
+
+'
+SERVER SendPacket 550 File Unavailable
+
+
+At time 1.15718s SERVER received 18 bytes from 10.1.1.3 port 49153 total Rx 27 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '550 File Unavailable
+
+'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET little.txt
+
+' to SERVER
+At time 1.17247s CLIENT sent 17 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET little.txt
+
+'
+Server outgoing = '200 OK 1
+
+A'
+Server sending '200 OK 1
+
+A'
+SERVER SendPacket 200 OK 1
+
+A
+At time 1.1869s SERVER received 17 bytes from 10.1.1.3 port 49153 total Rx 44 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 1
+
+A'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET big.txt
+
+' to SERVER
+At time 1.20061s CLIENT sent 14 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET big.txt
+
+'
+Server outgoing = '200 OK 11
+
+A big file.'
+Server sending '200 OK 11
+
+A big file.'
+SERVER SendPacket 200 OK 11
+
+A big file.
+At time 1.21461s SERVER received 14 bytes from 10.1.1.3 port 49153 total Rx 58 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 11
+
+A big file.'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET huge.txt
+
+' to SERVER
+At time 1.2299s CLIENT sent 15 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET huge.txt
+
+'
+Server outgoing = '200 OK 31
+
+An even bigger file.
+And more!'
+Server sending '200 OK 31
+
+An even bigger file.
+And more!'
+SERVER SendPacket 200 OK 31
+
+An even bigger file.
+And more!
+At time 1.24404s SERVER received 15 bytes from 10.1.1.3 port 49153 total Rx 73 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 31
+
+An even bigger file.
+And more!'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET giant.txt
+
+' to SERVER
+At time 1.26204s CLIENT sent 16 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET giant.txt
+
+'
+Server outgoing = '200 OK 12
+
+Jolly, Green'
+Server sending '200 OK 12
+
+Jolly, Green'
+SERVER SendPacket 200 OK 12
+
+Jolly, Green
+At time 1.27633s SERVER received 16 bytes from 10.1.1.3 port 49153 total Rx 89 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 12
+
+Jolly, Green'
+CLIENT StopApplication
+SERVER HandlePeerClose
+CLIENT StartApplication
+CLIENT Calling Bind
+CLIENT Called Bind
+CLIENT SendPacket
+CLIENT Sending MSG 'Foobar
+
+' to SERVER
+At time 3s CLIENT sent 9 bytes
+SERVER HandleAccept
+SERVER HandleRead
+SERVER Received Packet. Payload = 'Foobar
+
+'
+Server outgoing = '202 Command Not Implemented
+
+'
+Server sending '202 Command Not Implemented
+
+'
+SERVER SendPacket 202 Command Not Implemented
+
+
+At time 3.10811s SERVER received 9 bytes from 10.1.1.4 port 49153 total Rx 98 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '202 Command Not Implemented
+
+'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET UNKNOWNFILE
+
+' to SERVER
+At time 3.13648s CLIENT sent 18 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET UNKNOWNFILE
+
+'
+Server outgoing = '550 File Unavailable
+
+'
+Server sending '550 File Unavailable
+
+'
+SERVER SendPacket 550 File Unavailable
+
+
+At time 3.16307s SERVER received 18 bytes from 10.1.1.4 port 49153 total Rx 116 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '550 File Unavailable
+
+'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET little.txt
+
+' to SERVER
+At time 3.17835s CLIENT sent 17 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET little.txt
+
+'
+Server outgoing = '200 OK 1
+
+A'
+Server sending '200 OK 1
+
+A'
+SERVER SendPacket 200 OK 1
+
+A
+At time 3.19278s SERVER received 17 bytes from 10.1.1.4 port 49153 total Rx 133 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 1
+
+A'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET big.txt
+
+' to SERVER
+At time 3.2065s CLIENT sent 14 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET big.txt
+
+'
+Server outgoing = '200 OK 11
+
+A big file.'
+Server sending '200 OK 11
+
+A big file.'
+SERVER SendPacket 200 OK 11
+
+A big file.
+At time 3.2205s SERVER received 14 bytes from 10.1.1.4 port 49153 total Rx 147 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 11
+
+A big file.'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET huge.txt
+
+' to SERVER
+At time 3.23578s CLIENT sent 15 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET huge.txt
+
+'
+Server outgoing = '200 OK 31
+
+An even bigger file.
+And more!'
+Server sending '200 OK 31
+
+An even bigger file.
+And more!'
+SERVER SendPacket 200 OK 31
+
+An even bigger file.
+And more!
+At time 3.24993s SERVER received 15 bytes from 10.1.1.4 port 49153 total Rx 162 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 31
+
+An even bigger file.
+And more!'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET giant.txt
+
+' to SERVER
+At time 3.26793s CLIENT sent 16 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET giant.txt
+
+'
+Server outgoing = '200 OK 12
+
+Jolly, Green'
+Server sending '200 OK 12
+
+Jolly, Green'
+SERVER SendPacket 200 OK 12
+
+Jolly, Green
+At time 3.28221s SERVER received 16 bytes from 10.1.1.4 port 49153 total Rx 178 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 12
+
+Jolly, Green'
+CLIENT StopApplication
+SERVER HandlePeerClose
+CLIENT StartApplication
+CLIENT Calling Bind
+CLIENT Called Bind
+CLIENT SendPacket
+CLIENT Sending MSG 'Foobar
+
+' to SERVER
+At time 5s CLIENT sent 9 bytes
+SERVER HandleAccept
+SERVER HandleRead
+SERVER Received Packet. Payload = 'Foobar
+
+'
+Server outgoing = '202 Command Not Implemented
+
+'
+Server sending '202 Command Not Implemented
+
+'
+SERVER SendPacket 202 Command Not Implemented
+
+
+At time 5.10001s SERVER received 9 bytes from 10.1.1.5 port 49153 total Rx 187 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '202 Command Not Implemented
+
+'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET UNKNOWNFILE
+
+' to SERVER
+At time 5.12844s CLIENT sent 18 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET UNKNOWNFILE
+
+'
+Server outgoing = '550 File Unavailable
+
+'
+Server sending '550 File Unavailable
+
+'
+SERVER SendPacket 550 File Unavailable
+
+
+At time 5.15513s SERVER received 18 bytes from 10.1.1.5 port 49153 total Rx 205 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '550 File Unavailable
+
+'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET little.txt
+
+' to SERVER
+At time 5.17042s CLIENT sent 17 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET little.txt
+
+'
+Server outgoing = '200 OK 1
+
+A'
+Server sending '200 OK 1
+
+A'
+SERVER SendPacket 200 OK 1
+
+A
+At time 5.18484s SERVER received 17 bytes from 10.1.1.5 port 49153 total Rx 222 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 1
+
+A'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET big.txt
+
+' to SERVER
+At time 5.19856s CLIENT sent 14 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET big.txt
+
+'
+Server outgoing = '200 OK 11
+
+A big file.'
+Server sending '200 OK 11
+
+A big file.'
+SERVER SendPacket 200 OK 11
+
+A big file.
+At time 5.21256s SERVER received 14 bytes from 10.1.1.5 port 49153 total Rx 236 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 11
+
+A big file.'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET huge.txt
+
+' to SERVER
+At time 5.22784s CLIENT sent 15 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET huge.txt
+
+'
+Server outgoing = '200 OK 31
+
+An even bigger file.
+And more!'
+Server sending '200 OK 31
+
+An even bigger file.
+And more!'
+SERVER SendPacket 200 OK 31
+
+An even bigger file.
+And more!
+At time 5.24199s SERVER received 15 bytes from 10.1.1.5 port 49153 total Rx 251 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 31
+
+An even bigger file.
+And more!'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET giant.txt
+
+' to SERVER
+At time 5.25999s CLIENT sent 16 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET giant.txt
+
+'
+Server outgoing = '200 OK 12
+
+Jolly, Green'
+Server sending '200 OK 12
+
+Jolly, Green'
+SERVER SendPacket 200 OK 12
+
+Jolly, Green
+At time 5.27427s SERVER received 16 bytes from 10.1.1.5 port 49153 total Rx 267 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 12
+
+Jolly, Green'
+CLIENT StopApplication
+SERVER HandlePeerClose
+CLIENT StartApplication
+CLIENT Calling Bind
+CLIENT Called Bind
+CLIENT SendPacket
+CLIENT Sending MSG 'Foobar
+
+' to SERVER
+At time 7s CLIENT sent 9 bytes
+SERVER HandleAccept
+SERVER HandleRead
+SERVER Received Packet. Payload = 'Foobar
+
+'
+Server outgoing = '202 Command Not Implemented
+
+'
+Server sending '202 Command Not Implemented
+
+'
+SERVER SendPacket 202 Command Not Implemented
+
+
+At time 7.10697s SERVER received 9 bytes from 10.1.1.6 port 49153 total Rx 276 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '202 Command Not Implemented
+
+'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET UNKNOWNFILE
+
+' to SERVER
+At time 7.13539s CLIENT sent 18 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET UNKNOWNFILE
+
+'
+Server outgoing = '550 File Unavailable
+
+'
+Server sending '550 File Unavailable
+
+'
+SERVER SendPacket 550 File Unavailable
+
+
+At time 7.16227s SERVER received 18 bytes from 10.1.1.6 port 49153 total Rx 294 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '550 File Unavailable
+
+'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET little.txt
+
+' to SERVER
+At time 7.17756s CLIENT sent 17 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET little.txt
+
+'
+Server outgoing = '200 OK 1
+
+A'
+Server sending '200 OK 1
+
+A'
+SERVER SendPacket 200 OK 1
+
+A
+At time 7.19198s SERVER received 17 bytes from 10.1.1.6 port 49153 total Rx 311 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 1
+
+A'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET big.txt
+
+' to SERVER
+At time 7.2057s CLIENT sent 14 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET big.txt
+
+'
+Server outgoing = '200 OK 11
+
+A big file.'
+Server sending '200 OK 11
+
+A big file.'
+SERVER SendPacket 200 OK 11
+
+A big file.
+At time 7.2197s SERVER received 14 bytes from 10.1.1.6 port 49153 total Rx 325 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 11
+
+A big file.'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET huge.txt
+
+' to SERVER
+At time 7.23498s CLIENT sent 15 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET huge.txt
+
+'
+Server outgoing = '200 OK 31
+
+An even bigger file.
+And more!'
+Server sending '200 OK 31
+
+An even bigger file.
+And more!'
+SERVER SendPacket 200 OK 31
+
+An even bigger file.
+And more!
+At time 7.24913s SERVER received 15 bytes from 10.1.1.6 port 49153 total Rx 340 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 31
+
+An even bigger file.
+And more!'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET giant.txt
+
+' to SERVER
+At time 7.26713s CLIENT sent 16 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET giant.txt
+
+'
+Server outgoing = '200 OK 12
+
+Jolly, Green'
+Server sending '200 OK 12
+
+Jolly, Green'
+SERVER SendPacket 200 OK 12
+
+Jolly, Green
+At time 7.28141s SERVER received 16 bytes from 10.1.1.6 port 49153 total Rx 356 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 12
+
+Jolly, Green'
+CLIENT StopApplication
+SERVER HandlePeerClose
+CLIENT StartApplication
+CLIENT Calling Bind
+CLIENT Called Bind
+CLIENT SendPacket
+CLIENT Sending MSG 'Foobar
+
+' to SERVER
+At time 9s CLIENT sent 9 bytes
+SERVER HandleAccept
+SERVER HandleRead
+SERVER Received Packet. Payload = 'Foobar
+
+'
+Server outgoing = '202 Command Not Implemented
+
+'
+Server sending '202 Command Not Implemented
+
+'
+SERVER SendPacket 202 Command Not Implemented
+
+
+At time 9.10601s SERVER received 9 bytes from 10.1.1.7 port 49153 total Rx 365 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '202 Command Not Implemented
+
+'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET UNKNOWNFILE
+
+' to SERVER
+At time 9.13467s CLIENT sent 18 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET UNKNOWNFILE
+
+'
+Server outgoing = '550 File Unavailable
+
+'
+Server sending '550 File Unavailable
+
+'
+SERVER SendPacket 550 File Unavailable
+
+
+At time 9.16138s SERVER received 18 bytes from 10.1.1.7 port 49153 total Rx 383 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '550 File Unavailable
+
+'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET little.txt
+
+' to SERVER
+At time 9.17666s CLIENT sent 17 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET little.txt
+
+'
+Server outgoing = '200 OK 1
+
+A'
+Server sending '200 OK 1
+
+A'
+SERVER SendPacket 200 OK 1
+
+A
+At time 9.19109s SERVER received 17 bytes from 10.1.1.7 port 49153 total Rx 400 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 1
+
+A'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET big.txt
+
+' to SERVER
+At time 9.2048s CLIENT sent 14 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET big.txt
+
+'
+Server outgoing = '200 OK 11
+
+A big file.'
+Server sending '200 OK 11
+
+A big file.'
+SERVER SendPacket 200 OK 11
+
+A big file.
+At time 9.2188s SERVER received 14 bytes from 10.1.1.7 port 49153 total Rx 414 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 11
+
+A big file.'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET huge.txt
+
+' to SERVER
+At time 9.23409s CLIENT sent 15 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET huge.txt
+
+'
+Server outgoing = '200 OK 31
+
+An even bigger file.
+And more!'
+Server sending '200 OK 31
+
+An even bigger file.
+And more!'
+SERVER SendPacket 200 OK 31
+
+An even bigger file.
+And more!
+At time 9.24823s SERVER received 15 bytes from 10.1.1.7 port 49153 total Rx 429 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 31
+
+An even bigger file.
+And more!'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET giant.txt
+
+' to SERVER
+At time 9.26623s CLIENT sent 16 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET giant.txt
+
+'
+Server outgoing = '200 OK 12
+
+Jolly, Green'
+Server sending '200 OK 12
+
+Jolly, Green'
+SERVER SendPacket 200 OK 12
+
+Jolly, Green
+At time 9.28052s SERVER received 16 bytes from 10.1.1.7 port 49153 total Rx 445 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 12
+
+Jolly, Green'
+CLIENT StopApplication
+SERVER HandlePeerClose
+CLIENT StartApplication
+CLIENT Calling Bind
+CLIENT Called Bind
+CLIENT SendPacket
+CLIENT Sending MSG 'Foobar
+
+' to SERVER
+At time 11s CLIENT sent 9 bytes
+SERVER HandleAccept
+SERVER HandleRead
+SERVER Received Packet. Payload = 'Foobar
+
+'
+Server outgoing = '202 Command Not Implemented
+
+'
+Server sending '202 Command Not Implemented
+
+'
+SERVER SendPacket 202 Command Not Implemented
+
+
+At time 11.1031s SERVER received 9 bytes from 10.1.1.8 port 49153 total Rx 454 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '202 Command Not Implemented
+
+'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET UNKNOWNFILE
+
+' to SERVER
+At time 11.1314s CLIENT sent 18 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET UNKNOWNFILE
+
+'
+Server outgoing = '550 File Unavailable
+
+'
+Server sending '550 File Unavailable
+
+'
+SERVER SendPacket 550 File Unavailable
+
+
+At time 11.1581s SERVER received 18 bytes from 10.1.1.8 port 49153 total Rx 472 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '550 File Unavailable
+
+'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET little.txt
+
+' to SERVER
+At time 11.1734s CLIENT sent 17 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET little.txt
+
+'
+Server outgoing = '200 OK 1
+
+A'
+Server sending '200 OK 1
+
+A'
+SERVER SendPacket 200 OK 1
+
+A
+At time 11.1878s SERVER received 17 bytes from 10.1.1.8 port 49153 total Rx 489 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 1
+
+A'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET big.txt
+
+' to SERVER
+At time 11.2015s CLIENT sent 14 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET big.txt
+
+'
+Server outgoing = '200 OK 11
+
+A big file.'
+Server sending '200 OK 11
+
+A big file.'
+SERVER SendPacket 200 OK 11
+
+A big file.
+At time 11.2155s SERVER received 14 bytes from 10.1.1.8 port 49153 total Rx 503 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 11
+
+A big file.'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET huge.txt
+
+' to SERVER
+At time 11.2308s CLIENT sent 15 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET huge.txt
+
+'
+Server outgoing = '200 OK 31
+
+An even bigger file.
+And more!'
+Server sending '200 OK 31
+
+An even bigger file.
+And more!'
+SERVER SendPacket 200 OK 31
+
+An even bigger file.
+And more!
+At time 11.245s SERVER received 15 bytes from 10.1.1.8 port 49153 total Rx 518 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 31
+
+An even bigger file.
+And more!'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET giant.txt
+
+' to SERVER
+At time 11.263s CLIENT sent 16 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET giant.txt
+
+'
+Server outgoing = '200 OK 12
+
+Jolly, Green'
+Server sending '200 OK 12
+
+Jolly, Green'
+SERVER SendPacket 200 OK 12
+
+Jolly, Green
+At time 11.2772s SERVER received 16 bytes from 10.1.1.8 port 49153 total Rx 534 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 12
+
+Jolly, Green'
+CLIENT StopApplication
+SERVER HandlePeerClose
+CLIENT StartApplication
+CLIENT Calling Bind
+CLIENT Called Bind
+CLIENT SendPacket
+CLIENT Sending MSG 'Foobar
+
+' to SERVER
+At time 13s CLIENT sent 9 bytes
+SERVER HandleAccept
+SERVER HandleRead
+SERVER Received Packet. Payload = 'Foobar
+
+'
+Server outgoing = '202 Command Not Implemented
+
+'
+Server sending '202 Command Not Implemented
+
+'
+SERVER SendPacket 202 Command Not Implemented
+
+
+At time 13.11s SERVER received 9 bytes from 10.1.1.9 port 49153 total Rx 543 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '202 Command Not Implemented
+
+'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET UNKNOWNFILE
+
+' to SERVER
+At time 13.1384s CLIENT sent 18 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET UNKNOWNFILE
+
+'
+Server outgoing = '550 File Unavailable
+
+'
+Server sending '550 File Unavailable
+
+'
+SERVER SendPacket 550 File Unavailable
+
+
+At time 13.165s SERVER received 18 bytes from 10.1.1.9 port 49153 total Rx 561 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '550 File Unavailable
+
+'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET little.txt
+
+' to SERVER
+At time 13.1803s CLIENT sent 17 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET little.txt
+
+'
+Server outgoing = '200 OK 1
+
+A'
+Server sending '200 OK 1
+
+A'
+SERVER SendPacket 200 OK 1
+
+A
+At time 13.1947s SERVER received 17 bytes from 10.1.1.9 port 49153 total Rx 578 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 1
+
+A'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET big.txt
+
+' to SERVER
+At time 13.2084s CLIENT sent 14 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET big.txt
+
+'
+Server outgoing = '200 OK 11
+
+A big file.'
+Server sending '200 OK 11
+
+A big file.'
+SERVER SendPacket 200 OK 11
+
+A big file.
+At time 13.2224s SERVER received 14 bytes from 10.1.1.9 port 49153 total Rx 592 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 11
+
+A big file.'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET huge.txt
+
+' to SERVER
+At time 13.2377s CLIENT sent 15 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET huge.txt
+
+'
+Server outgoing = '200 OK 31
+
+An even bigger file.
+And more!'
+Server sending '200 OK 31
+
+An even bigger file.
+And more!'
+SERVER SendPacket 200 OK 31
+
+An even bigger file.
+And more!
+At time 13.2518s SERVER received 15 bytes from 10.1.1.9 port 49153 total Rx 607 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 31
+
+An even bigger file.
+And more!'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET giant.txt
+
+' to SERVER
+At time 13.2698s CLIENT sent 16 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET giant.txt
+
+'
+Server outgoing = '200 OK 12
+
+Jolly, Green'
+Server sending '200 OK 12
+
+Jolly, Green'
+SERVER SendPacket 200 OK 12
+
+Jolly, Green
+At time 13.2841s SERVER received 16 bytes from 10.1.1.9 port 49153 total Rx 623 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 12
+
+Jolly, Green'
+CLIENT StopApplication
+SERVER HandlePeerClose
+CLIENT StartApplication
+CLIENT Calling Bind
+CLIENT Called Bind
+CLIENT SendPacket
+CLIENT Sending MSG 'Foobar
+
+' to SERVER
+At time 15s CLIENT sent 9 bytes
+SERVER HandleAccept
+SERVER HandleRead
+SERVER Received Packet. Payload = 'Foobar
+
+'
+Server outgoing = '202 Command Not Implemented
+
+'
+Server sending '202 Command Not Implemented
+
+'
+SERVER SendPacket 202 Command Not Implemented
+
+
+At time 15.0993s SERVER received 9 bytes from 10.1.1.10 port 49153 total Rx 632 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '202 Command Not Implemented
+
+'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET UNKNOWNFILE
+
+' to SERVER
+At time 15.1283s CLIENT sent 18 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET UNKNOWNFILE
+
+'
+Server outgoing = '550 File Unavailable
+
+'
+Server sending '550 File Unavailable
+
+'
+SERVER SendPacket 550 File Unavailable
+
+
+At time 15.155s SERVER received 18 bytes from 10.1.1.10 port 49153 total Rx 650 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '550 File Unavailable
+
+'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET little.txt
+
+' to SERVER
+At time 15.1703s CLIENT sent 17 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET little.txt
+
+'
+Server outgoing = '200 OK 1
+
+A'
+Server sending '200 OK 1
+
+A'
+SERVER SendPacket 200 OK 1
+
+A
+At time 15.1847s SERVER received 17 bytes from 10.1.1.10 port 49153 total Rx 667 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 1
+
+A'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET big.txt
+
+' to SERVER
+At time 15.1985s CLIENT sent 14 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET big.txt
+
+'
+Server outgoing = '200 OK 11
+
+A big file.'
+Server sending '200 OK 11
+
+A big file.'
+SERVER SendPacket 200 OK 11
+
+A big file.
+At time 15.2125s SERVER received 14 bytes from 10.1.1.10 port 49153 total Rx 681 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 11
+
+A big file.'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET huge.txt
+
+' to SERVER
+At time 15.2277s CLIENT sent 15 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET huge.txt
+
+'
+Server outgoing = '200 OK 31
+
+An even bigger file.
+And more!'
+Server sending '200 OK 31
+
+An even bigger file.
+And more!'
+SERVER SendPacket 200 OK 31
+
+An even bigger file.
+And more!
+At time 15.2419s SERVER received 15 bytes from 10.1.1.10 port 49153 total Rx 696 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 31
+
+An even bigger file.
+And more!'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET giant.txt
+
+' to SERVER
+At time 15.2599s CLIENT sent 16 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET giant.txt
+
+'
+Server outgoing = '200 OK 12
+
+Jolly, Green'
+Server sending '200 OK 12
+
+Jolly, Green'
+SERVER SendPacket 200 OK 12
+
+Jolly, Green
+At time 15.2742s SERVER received 16 bytes from 10.1.1.10 port 49153 total Rx 712 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 12
+
+Jolly, Green'
+CLIENT StopApplication
+SERVER HandlePeerClose
+CLIENT StartApplication
+CLIENT Calling Bind
+CLIENT Called Bind
+CLIENT SendPacket
+CLIENT Sending MSG 'Foobar
+
+' to SERVER
+At time 17s CLIENT sent 9 bytes
+SERVER HandleAccept
+SERVER HandleRead
+SERVER Received Packet. Payload = 'Foobar
+
+'
+Server outgoing = '202 Command Not Implemented
+
+'
+Server sending '202 Command Not Implemented
+
+'
+SERVER SendPacket 202 Command Not Implemented
+
+
+At time 17.1026s SERVER received 9 bytes from 10.1.1.11 port 49153 total Rx 721 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '202 Command Not Implemented
+
+'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET UNKNOWNFILE
+
+' to SERVER
+At time 17.1317s CLIENT sent 18 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET UNKNOWNFILE
+
+'
+Server outgoing = '550 File Unavailable
+
+'
+Server sending '550 File Unavailable
+
+'
+SERVER SendPacket 550 File Unavailable
+
+
+At time 17.1584s SERVER received 18 bytes from 10.1.1.11 port 49153 total Rx 739 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '550 File Unavailable
+
+'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET little.txt
+
+' to SERVER
+At time 17.1736s CLIENT sent 17 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET little.txt
+
+'
+Server outgoing = '200 OK 1
+
+A'
+Server sending '200 OK 1
+
+A'
+SERVER SendPacket 200 OK 1
+
+A
+At time 17.1881s SERVER received 17 bytes from 10.1.1.11 port 49153 total Rx 756 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 1
+
+A'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET big.txt
+
+' to SERVER
+At time 17.2018s CLIENT sent 14 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET big.txt
+
+'
+Server outgoing = '200 OK 11
+
+A big file.'
+Server sending '200 OK 11
+
+A big file.'
+SERVER SendPacket 200 OK 11
+
+A big file.
+At time 17.2158s SERVER received 14 bytes from 10.1.1.11 port 49153 total Rx 770 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 11
+
+A big file.'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET huge.txt
+
+' to SERVER
+At time 17.2311s CLIENT sent 15 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET huge.txt
+
+'
+Server outgoing = '200 OK 31
+
+An even bigger file.
+And more!'
+Server sending '200 OK 31
+
+An even bigger file.
+And more!'
+SERVER SendPacket 200 OK 31
+
+An even bigger file.
+And more!
+At time 17.2452s SERVER received 15 bytes from 10.1.1.11 port 49153 total Rx 785 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 31
+
+An even bigger file.
+And more!'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET giant.txt
+
+' to SERVER
+At time 17.2632s CLIENT sent 16 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET giant.txt
+
+'
+Server outgoing = '200 OK 12
+
+Jolly, Green'
+Server sending '200 OK 12
+
+Jolly, Green'
+SERVER SendPacket 200 OK 12
+
+Jolly, Green
+At time 17.2775s SERVER received 16 bytes from 10.1.1.11 port 49153 total Rx 801 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 12
+
+Jolly, Green'
+CLIENT StopApplication
+SERVER HandlePeerClose
+CLIENT StartApplication
+CLIENT Calling Bind
+CLIENT Called Bind
+CLIENT SendPacket
+CLIENT Sending MSG 'Foobar
+
+' to SERVER
+At time 19s CLIENT sent 9 bytes
+SERVER HandleAccept
+SERVER HandleRead
+SERVER Received Packet. Payload = 'Foobar
+
+'
+Server outgoing = '202 Command Not Implemented
+
+'
+Server sending '202 Command Not Implemented
+
+'
+SERVER SendPacket 202 Command Not Implemented
+
+
+At time 19.1053s SERVER received 9 bytes from 10.1.1.12 port 49153 total Rx 810 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '202 Command Not Implemented
+
+'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET UNKNOWNFILE
+
+' to SERVER
+At time 19.1337s CLIENT sent 18 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET UNKNOWNFILE
+
+'
+Server outgoing = '550 File Unavailable
+
+'
+Server sending '550 File Unavailable
+
+'
+SERVER SendPacket 550 File Unavailable
+
+
+At time 19.1605s SERVER received 18 bytes from 10.1.1.12 port 49153 total Rx 828 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '550 File Unavailable
+
+'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET little.txt
+
+' to SERVER
+At time 19.1758s CLIENT sent 17 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET little.txt
+
+'
+Server outgoing = '200 OK 1
+
+A'
+Server sending '200 OK 1
+
+A'
+SERVER SendPacket 200 OK 1
+
+A
+At time 19.1902s SERVER received 17 bytes from 10.1.1.12 port 49153 total Rx 845 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 1
+
+A'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET big.txt
+
+' to SERVER
+At time 19.204s CLIENT sent 14 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET big.txt
+
+'
+Server outgoing = '200 OK 11
+
+A big file.'
+Server sending '200 OK 11
+
+A big file.'
+SERVER SendPacket 200 OK 11
+
+A big file.
+At time 19.218s SERVER received 14 bytes from 10.1.1.12 port 49153 total Rx 859 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 11
+
+A big file.'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET huge.txt
+
+' to SERVER
+At time 19.2332s CLIENT sent 15 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET huge.txt
+
+'
+Server outgoing = '200 OK 31
+
+An even bigger file.
+And more!'
+Server sending '200 OK 31
+
+An even bigger file.
+And more!'
+SERVER SendPacket 200 OK 31
+
+An even bigger file.
+And more!
+At time 19.2474s SERVER received 15 bytes from 10.1.1.12 port 49153 total Rx 874 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 31
+
+An even bigger file.
+And more!'
+CLIENT SendPacket
+CLIENT Sending MSG 'GET giant.txt
+
+' to SERVER
+At time 19.2654s CLIENT sent 16 bytes
+SERVER HandleRead
+SERVER Received Packet. Payload = 'GET giant.txt
+
+'
+Server outgoing = '200 OK 12
+
+Jolly, Green'
+Server sending '200 OK 12
+
+Jolly, Green'
+SERVER SendPacket 200 OK 12
+
+Jolly, Green
+At time 19.2797s SERVER received 16 bytes from 10.1.1.12 port 49153 total Rx 890 bytes
+CLIENT HandleRead
+CLIENT Received Packet. Payload = '200 OK 12
+
+Jolly, Green'
+SERVER StopApplication
+SERVER HandlePeerClose
+SERVER StopApplication
+SERVER HandlePeerClose
+CLIENT StopApplication
+CLIENT HandleRead
+CLIENT HandleRead
+CLIENT HandleRead
+CLIENT HandleRead
+SERVER HandleRead
+CLIENT HandleRead
+CLIENT HandleRead
+CLIENT HandleRead
+CLIENT HandleRead
+CLIENT HandleRead
+CLIENT HandleRead
+SERVER DoDispose
+SERVER DoDispose
+CLIENT Destruction
+CLIENT Destruction
+CLIENT Destruction
+CLIENT Destruction
+CLIENT Destruction
+CLIENT Destruction
+CLIENT Destruction
+CLIENT Destruction
+CLIENT Destruction
+CLIENT Destruction
